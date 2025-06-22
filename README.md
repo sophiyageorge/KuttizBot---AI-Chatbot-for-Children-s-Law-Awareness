@@ -153,6 +153,7 @@ Mistral Model
 
 
 **🤝 Contributing**
+
 **If you'd like to contribute improvements, feel free to fork the repo and open a PR. Let's make legal education accessible for kids! ❤️**
 
 

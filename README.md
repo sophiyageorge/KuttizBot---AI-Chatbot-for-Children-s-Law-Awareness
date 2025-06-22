@@ -51,16 +51,16 @@ KuttiZBot/
 
 ### 1. 🔧 Install Dependencies
 
-Make sure you're using Python 3.10+. Create and activate a virtual environment: **
+Make sure you're using Python 3.10+. Create and activate a virtual environment:**
 
 
-python -m venv venv  **
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+python -m venv venv**
+source venv/bin/activate  # or venv\Scripts\activate on Windows**
 
 
-Then install the required packages: **
+Then install the required packages:**
 
-pip install -r requirements.txt **
+pip install -r requirements.txt**
 
 
 ### 2. Set Up Ollama & Pull Mistral Model

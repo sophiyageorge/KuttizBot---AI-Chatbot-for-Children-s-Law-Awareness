@@ -62,7 +62,7 @@ Then install the required packages:
 pip install -r requirements.txt
 
 
- Set Up Ollama & Pull Mistral Model
+### 2. Set Up Ollama & Pull Mistral Model
 Install Ollama and run:
 
 
@@ -70,7 +70,7 @@ Install Ollama and run:
 ollama pull mistral
 This downloads and sets up the Mistral 7B Instruct model locally.
 
-3. 🧠 Build the Vector Index
+### 3. 🧠 Build the Vector Index
 Place your laws in a .txt file in docs/laws.txt.
 
 Then run:
@@ -84,12 +84,12 @@ Embed the chunks using HuggingFace
 
 Save a FAISS index to faiss_index/
 
-4. 🧒 Run the KuttiZBot App
+### 4. 🧒 Run the KuttiZBot App
 
 streamlit run app.py
 It will open localhost:8501 with a friendly UI where children can ask legal questions.
 
-🎨 UI Features
+### 🎨 UI Features
 Custom background image (bg.jpg)
 
 Friendly greetings and explanations
@@ -98,14 +98,14 @@ Styled input and output blocks using Streamlit markdown + HTML
 
 Session history preserved while the app is open
 
-✅ Example Questions
+### ✅ Example Questions
 
 What is child abuse?
 What are my rights in school?
 Can a child be arrested?
 What should I do if someone is hurting me?
 
-📈 Future Improvements
+### 📈 Future Improvements
 Add speech-to-text and text-to-speech for younger children.
 
 Include multi-language support (e.g., Hindi, Malayalam).
@@ -116,7 +116,7 @@ Upgrade to larger or quantized models for better performance.
 
 Add content filters to keep responses age-appropriate.
 
-📚 References
+### 📚 References
 UNICEF Child Rights Resources
 
 National Commission for Protection of Child Rights – India
@@ -130,7 +130,7 @@ Mistral Model
 🤝 Contributing
 If you'd like to contribute improvements, feel free to fork the repo and open a PR. Let's make legal education accessible for kids! ❤️
 
-📄 License
+### 📄 License
 MIT License – free to use and modify.
 
 

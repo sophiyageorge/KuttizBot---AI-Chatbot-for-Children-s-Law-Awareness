@@ -29,6 +29,7 @@ Built with **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Streamlit
 ---
 
 ## 🗂️ Project Structure
+```bash
 KuttiZBot/
 │
 ├── app.py # Streamlit frontend & chatbot logic
@@ -42,7 +43,7 @@ KuttiZBot/
 └── README.md # You're reading it!
 
 
-
+```bash
 
 ---
 

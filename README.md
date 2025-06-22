@@ -43,7 +43,7 @@ KuttiZBot/
 └── README.md # You're reading it!
 
 
-```bash
+```
 
 ---
 

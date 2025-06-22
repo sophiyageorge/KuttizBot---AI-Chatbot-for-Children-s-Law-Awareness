@@ -65,75 +65,100 @@ pip install -r requirements.txt
 
 
 ### 2. Set Up Ollama & Pull Mistral Model
-Install Ollama and run:
+**Install Ollama and run:**
 
 
 
 ollama pull mistral
+
 This downloads and sets up the Mistral 7B Instruct model locally.
 
 ### 3. 🧠 Build the Vector Index
-Place your laws in a .txt file in docs/laws.txt.
+**Place your laws in a .txt file in docs/laws.txt.**
 
 Then run:
 
+
 python vector_store_.py
+
 This will:
+
 
 Split your text
 
+
 Embed the chunks using HuggingFace
 
+
 Save a FAISS index to faiss_index/
+
 
 ### 4. 🧒 Run the KuttiZBot App
 
 streamlit run app.py
+
 It will open localhost:8501 with a friendly UI where children can ask legal questions.
 
+
 ### 🎨 UI Features
-Custom background image (bg.jpg)
+- **Custom background image (bg.jpg)**
 
-Friendly greetings and explanations
+- **Friendly greetings and explanations**
 
-Styled input and output blocks using Streamlit markdown + HTML
+- **Styled input and output blocks using Streamlit markdown + HTML**
 
-Session history preserved while the app is open
+- **Session history preserved while the app is open**
 
 ### ✅ Example Questions
 
 What is child abuse?
+
 What are my rights in school?
+
 Can a child be arrested?
+
 What should I do if someone is hurting me?
+
 
 ### 📈 Future Improvements
 Add speech-to-text and text-to-speech for younger children.
 
+
 Include multi-language support (e.g., Hindi, Malayalam).
+
 
 Mobile UI optimization.
 
+
 Upgrade to larger or quantized models for better performance.
 
+
 Add content filters to keep responses age-appropriate.
+
 
 ### 📚 References
 UNICEF Child Rights Resources
 
+
 National Commission for Protection of Child Rights – India
+
 
 LangChain Docs
 
+
 Ollama Docs
+
 
 Mistral Model
 
-🤝 Contributing
-If you'd like to contribute improvements, feel free to fork the repo and open a PR. Let's make legal education accessible for kids! ❤️
+
+**🤝 Contributing**
+**If you'd like to contribute improvements, feel free to fork the repo and open a PR. Let's make legal education accessible for kids! ❤️**
+
 
 ### 📄 License
 MIT License – free to use and modify.
+
 
 
 

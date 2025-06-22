@@ -1,0 +1,31 @@
+Artificial Intelligence (AI) is the field of computer science that focuses on creating systems or machines that can perform tasks that normally require human intelligence. These tasks include:
+
+Understanding language (like Siri, ChatGPT)
+
+Recognizing images or speech (like facial recognition)
+
+Learning from data (like Netflix recommendations)
+
+Making decisions (like self-driving cars or fraud detection)
+
+Simple Definition:
+AI is the ability of a machine or computer program to mimic human thinking and decision-making.
+
+Types of AI:
+Narrow AI (Weak AI):
+AI trained for a specific task (e.g., Google Maps, spam filters).
+
+General AI (Strong AI):
+AI that can understand, learn, and apply knowledge like a human. (Still theoretical)
+
+Super AI:
+Hypothetical AI that surpasses human intelligence (in the future).
+
+Key Areas of AI:
+Machine Learning (ML): Learning patterns from data
+
+Natural Language Processing (NLP): Understanding human language
+
+Computer Vision: Understanding images/videos
+
+Robotics: AI in physical machines

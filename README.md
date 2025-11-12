@@ -3,7 +3,7 @@
 An Llm-based Conversational Bot For Legal Education &amp; Protection Of Children
 KuttiZBot is a locally running conversational AI chatbot designed to help **children understand their rights, laws, and safety information**. It uses Retrieval-Augmented Generation (RAG) to answer queries based on documents provided about laws for children.
 
-Built with **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Streamlit** UI — all powered by **Mistral 7B** running locally via **Ollama**.
+Built with **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Streamlit** UI — all powered by **Mistral 7B** running locally via **LlamaCpp**.
 
 ---
 
@@ -22,7 +22,7 @@ Built with **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Streamlit
 | [LangChain](https://www.langchain.com/) | Framework to manage chains, LLMs, and document retrieval.       |
 | [FAISS](https://github.com/facebookresearch/faiss)         | Vector store for fast similarity search.                        |
 | [HuggingFace Sentence Transformers](https://www.sbert.net/) | Text embedding model.                                           |
-| [Ollama](https://ollama.com)            | Runs local LLMs like Mistral efficiently.                      |
+| | [Llama.cpp](https://github.com/ggerganov/llama.cpp) | Lightweight C++ framework to run LLMs like Llama 2 or Mistral locally on CPU/GPU. |
 | [Streamlit](https://streamlit.io/)      | Interactive and simple Python web UI.                          |
 | Mistral 7B via Ollama                   | Lightweight open-weight instruction-tuned LLM.                 |
 

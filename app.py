@@ -1,28 +1,15 @@
-from langchain_community.llms import Ollama
-from langchain.chains import RetrievalQA
+# from llama_cpp import Llama
+# import streamlit as st
+# from langchain_community.vectorstores import FAISS
+# from langchain_community.embeddings import HuggingFaceEmbeddings
+
+import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-import streamlit as st
-
+from langchain.chains import RetrievalQA
+from langchain.llms import LlamaCpp
 
 import base64
-
-
-def generate_answer(query):
-    # Load embeddings & vector store
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
-    retriever = vectorstore.as_retriever()
-
-    # Use Ollama to load Mistral model
-    llm = Ollama(model="mistral")
-
-    # Set up RetrievalQA chain
-    qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
-    return qa_chain.run(f"Answer this question in a friendly and simple way for children: {query}")
-
-
-
 
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
@@ -40,27 +27,27 @@ img_base64 = get_base64_image("bg.jpg")
 
 
 
-# def generate_answer(query):
-#     # embeddings = HuggingFaceEmbeddings()
-#     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-#     # vectorstore = FAISS.load_local("faiss_index", embeddings)
-#     vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
-#     retriever = vectorstore.as_retriever()
+def generate_answer(query):
+    # embeddings = HuggingFaceEmbeddings()
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    # vectorstore = FAISS.load_local("faiss_index", embeddings)
+    vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
+    retriever = vectorstore.as_retriever()
 
-#     llm = LlamaCpp(
-#         model_path="models/mistral-7b-instruct-v0.1.Q4_K_S.gguf",  # update path if needed
-#         n_ctx=2048,
-#         temperature=0.7,
-#         verbose=True
-#     )
+    llm = LlamaCpp(
+        model_path="models/mistral-7b-instruct-v0.1.Q4_K_S.gguf",  # update path if needed
+        n_ctx=2048,
+        temperature=0.7,
+        verbose=True
+    )
 
-#     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
-#     return qa_chain.run(f"Answer this question in a friendly and simple way for children: {query}")
-#     # qa_chain.run(query)
+    qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
+    return qa_chain.run(f"Answer this question in a friendly and simple way for children: {query}")
+    # qa_chain.run(query)
 
 
 
-# import streamlit as st
+import streamlit as st
  # Assuming your function is here
 
 # Set page config

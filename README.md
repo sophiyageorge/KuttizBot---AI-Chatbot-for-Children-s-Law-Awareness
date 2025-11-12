@@ -145,7 +145,7 @@ National Commission for Protection of Child Rights – India
 LangChain Docs
 
 
-Ollama Docs
+LlamaCpp Docs
 
 
 Mistral Model

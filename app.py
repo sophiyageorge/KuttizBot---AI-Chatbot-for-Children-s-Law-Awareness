@@ -1,8 +1,3 @@
-# from llama_cpp import Llama
-# import streamlit as st
-# from langchain_community.vectorstores import FAISS
-# from langchain_community.embeddings import HuggingFaceEmbeddings
-
 import streamlit as st
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -124,3 +119,4 @@ for q, a in reversed(st.session_state.history):
 # for q, a in reversed(st.session_state.history):
 #     st.markdown(f"**You**: {q}")
 #     st.markdown(f"**Bot**: {a}")
+

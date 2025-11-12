@@ -22,7 +22,7 @@ Built with **LangChain**, **FAISS**, **HuggingFace embeddings**, and **Streamlit
 | [LangChain](https://www.langchain.com/) | Framework to manage chains, LLMs, and document retrieval.       |
 | [FAISS](https://github.com/facebookresearch/faiss)         | Vector store for fast similarity search.                        |
 | [HuggingFace Sentence Transformers](https://www.sbert.net/) | Text embedding model.                                           |
-| | [Llama.cpp](https://github.com/ggerganov/llama.cpp) | Lightweight C++ framework to run LLMs like Llama 2 or Mistral locally on CPU/GPU. |
+| [Llama.cpp](https://github.com/ggerganov/llama.cpp) | Lightweight C++ framework to run LLMs like Llama 2 or Mistral locally on CPU/GPU. |
 | [Streamlit](https://streamlit.io/)      | Interactive and simple Python web UI.                          |
 | Mistral 7B via Ollama                   | Lightweight open-weight instruction-tuned LLM.                 |
 
@@ -64,14 +64,13 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
 
-### 2. Set Up Ollama & Pull Mistral Model
-**Install Ollama and run:**
+### 2. Set Up Llama.cpp & Mistral Model
+**Download the Mistral-7B-Instruct GGUF model** and place it in the `models/` folder:
 
+1. Visit [Hugging Face Mistral Models](https://huggingface.co/models?search=mistral+gguf) and download a GGUF quantized model (e.g., `mistral-7b-instruct-v0.1.Q4_K_S.gguf`).
 
+2. Save the model in the `models/` directory:
 
-ollama pull mistral
-
-This downloads and sets up the Mistral 7B Instruct model locally.
 
 ### 3. 🧠 Build the Vector Index
 **Place your laws in a .txt file in docs/laws.txt.**
